@@ -4,4 +4,7 @@ module "referencing" {
 
 output "referencing_module_id" {
   value = module.referencing.id
+  depends_on = [
+    module.referencing
+  ]
 }
