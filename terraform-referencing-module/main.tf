@@ -3,8 +3,5 @@ module "referencing" {
 }
 
 output "referencing_module_id" {
-  value = module.referencing.id
-  depends_on = [
-    module.referencing
-  ]
+  value = module.referencing.null_resource_id
 }
