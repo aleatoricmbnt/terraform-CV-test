@@ -1,5 +1,5 @@
 module "referencing" {
-  source = "../terraform-referenced-module/"
+  source = "github.com/aleatoricmbnt/terraform-CV-test/terraform-referenced-module"
 }
 
 output "referencing_module_id" {
